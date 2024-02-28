@@ -17,6 +17,10 @@ exports.TradeData = TradeData;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
+], TradeData.prototype, "id", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
 ], TradeData.prototype, "resources", void 0);
 __decorate([
     (0, typeorm_1.Column)(),

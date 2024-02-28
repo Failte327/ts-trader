@@ -1,6 +1,7 @@
 export declare class PriceData {
+    id: number;
     symbol: string;
-    price: number;
+    price: string;
     timestamp: Date;
     buyprice: number;
 }

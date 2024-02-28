@@ -1,4 +1,5 @@
 export declare class TradeData {
-    resources: number;
+    id: number;
+    resources: string;
     timestamp: Date;
 }

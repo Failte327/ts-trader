@@ -3,10 +3,13 @@ import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class PriceData {
   @PrimaryGeneratedColumn()
+  id: number
+
+  @Column()
   symbol: string;
 
   @Column()
-  price: number;
+  price: string;
 
   @Column()
   timestamp: Date;

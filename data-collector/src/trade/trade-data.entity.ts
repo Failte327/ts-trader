@@ -3,7 +3,10 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 @Entity()
 export class TradeData {
   @PrimaryGeneratedColumn()
-  resources: number
+  id: number
+
+  @Column()
+  resources: string
 
   @Column()
   timestamp: Date

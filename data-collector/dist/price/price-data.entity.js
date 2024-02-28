@@ -19,11 +19,15 @@ let PriceData = class PriceData {
 exports.PriceData = PriceData;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
+    __metadata("design:type", Number)
+], PriceData.prototype, "id", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], PriceData.prototype, "symbol", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
-    __metadata("design:type", Number)
+    __metadata("design:type", String)
 ], PriceData.prototype, "price", void 0);
 __decorate([
     (0, typeorm_1.Column)(),

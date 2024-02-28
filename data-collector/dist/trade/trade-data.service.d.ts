@@ -4,7 +4,7 @@ export declare class TradeDataService {
     private tradeDataRepository;
     constructor(tradeDataRepository: Repository<TradeData>);
     findAll(): Promise<TradeData[]>;
-    findOne(resources: number): Promise<TradeData | null>;
+    findOne(resources: string): Promise<TradeData | null>;
     insertTradeData(tradeData: TradeData): Promise<void>;
-    remove(resources: number): Promise<void>;
+    remove(resources: string): Promise<void>;
 }

@@ -14,7 +14,7 @@ export class TradeDataService {
     return this.tradeDataRepository.find();
   }
 
-  findOne(resources: number): Promise<TradeData | null> {
+  findOne(resources: string): Promise<TradeData | null> {
     return this.tradeDataRepository.findOneBy({ resources });
   }
 
@@ -22,7 +22,7 @@ export class TradeDataService {
     await this.tradeDataRepository.insert(tradeData)
   }
 
-  async remove(resources: number): Promise<void> {
+  async remove(resources: string): Promise<void> {
     await this.tradeDataRepository.delete(resources);
   }
 }
